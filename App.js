@@ -23,7 +23,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import {enableScreens} from 'react-native-screens';
 
-enableScreens(false);
+enableScreens(true);
 
 const LoginScreen = props => {
   return (
