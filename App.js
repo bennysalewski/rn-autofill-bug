@@ -18,14 +18,18 @@ import {
 } from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import {enableScreens} from 'react-native-screens';
 
+/*
+ * Setting this to true help only once. If you press login and navigate back the autofill doesn't work anymore.
+ * Event after restarting the mobile app.
+ * */
 enableScreens(true);
 
-const LoginScreen = props => {
+const LoginScreen = (props) => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
